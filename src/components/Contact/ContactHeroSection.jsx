@@ -48,7 +48,7 @@ const ContactHeroSection = () => {
       ),
       content: (
         <a href="tel:+923001234567" className="text-sm sm:text-base text-gray-300 hover:text-pink-400 transition-colors">
-         +44 203310 3822
+         +44 7566 777617
         </a>
       )
     },
@@ -62,11 +62,9 @@ const ContactHeroSection = () => {
       content: (
         <>
           <a href="mailto:sales@mictech.com" className="text-sm sm:text-base text-gray-300 hover:text-pink-400 transition-colors block">
-            sales@mictech.com
+            info@mictechnologies.co.uk
           </a>
-          <a href="mailto:info@mictech.com" className="text-sm sm:text-base text-gray-300 hover:text-pink-400 transition-colors block">
-            info@mictech.com
-          </a>
+         
         </>
       )
     },

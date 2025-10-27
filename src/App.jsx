@@ -9,6 +9,7 @@ import CustomSoftwarePage from './page/service-page/customsoftware-page/customso
 import Graphicpage from './page/service-page/graphic-page/graphicpage'
 import SocialHeroSection from './components/Services/SocialMedia/SocialMediaHero'
 import Socialmediapage from './page/service-page/socialmedia-page/socialmediapage'
+import Webpage from './page/service-page/web-page/webpage'
 
 
 // ScrollToTop component
@@ -35,6 +36,7 @@ export default function App(){
           <Route path="/services/custom-software" element={<CustomSoftwarePage/>}/>
           <Route path="/services/graphic-design" element={<Graphicpage/>}/>
           <Route path="/services/social-media" element={<Socialmediapage/>}/>
+          <Route path="/services/web-development" element={<Webpage/>}/>
         </Routes>
       </main>
       <Footer/>
