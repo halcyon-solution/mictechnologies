@@ -60,7 +60,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
+                <Link to="/services/mobile-development" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
                   Mobile App Development
                 </Link>
               </li>
@@ -70,7 +70,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
+                <Link to="/services/uiux-design" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
                   UI/UX Designing
                 </Link>
               </li>
