@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+
+html,body{
+  background-color: #05010F;
+  box-sizing: border-box;
+  font-family: "Urbanist"
+
+}
+
