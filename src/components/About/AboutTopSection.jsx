@@ -1,6 +1,6 @@
 import React from 'react'
 import { Target, Lightbulb, Rocket, Zap } from 'lucide-react'
-import AboutImage from '../../assets/About/about.webp'
+import AboutImage from '../../assets/About/Capture.JPG'
 import MetricImage from '../../assets/About/metric.webp'
 import cuttingedge from '../../assets/About/cuttingedge.webp'
 import centric from '../../assets/About/centric.webp'
@@ -79,11 +79,7 @@ const AboutTopSection = () => {
                 className="relative w-full max-w-md sm:max-w-lg md:max-w-xl h-auto object-contain rounded-3xl shadow-2xl border border-gray-800 transition-all duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              {/* Floating badge on image */}
-              <div className="absolute -bottom-4 -right-4 bg-[#FF006E] px-6 py-3 rounded-2xl shadow-2xl border border-pink-500/50">
-                <div className="text-2xl font-bold">5⭐</div>
-                <div className="text-xs text-gray-200">Top Rated</div>
-              </div>
+            
             </div>
           </div>
         </div>

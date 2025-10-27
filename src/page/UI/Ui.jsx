@@ -1,6 +1,5 @@
 import React from 'react'
 import UxTopSection from '../../components/Ux/UxTopSection'
-import UiHero from '../../components/Ux/UiHero'
 import UiDevelopment from '../../components/Ux/UiDevelopment'
 import UiServices from '../../components/Ux/UiServices'
 import UiTools from '../../components/Ux/UiTools'
@@ -10,8 +9,7 @@ const Ui = () => {
   return (
     <div className='cursor-pointer'>
         <UxTopSection/>
-        <UiHero/>
-        <UiDevelopment/>
+                <UiDevelopment/>
         <UiServices/>
         <UiTools/>
         <UiQuestions/>

@@ -1,6 +1,5 @@
 import React from 'react'
 import MobileTopSection from '../../components/Mobile/MobileTopSection'
-import MobileHeroSection from '../../components/Mobile/MobileHeroSection'
 import MobileDevelopmentSection from '../../components/Mobile/MobileDevelopmentSection'
 import MobileDevelopmentServices from '../../components/Mobile/MobileDevelopmentServices'
 import MobileDevelopmentPlatform from '../../components/Mobile/MobileDevelopmentPlatform'
@@ -10,7 +9,6 @@ const Mobile = () => {
   return (
     <section className='cursor-pointer'>
         <MobileTopSection/>
-        <MobileHeroSection/>
         <MobileDevelopmentSection/>
         <MobileDevelopmentServices/>
         <MobileDevelopmentPlatform/>

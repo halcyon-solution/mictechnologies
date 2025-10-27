@@ -4,29 +4,19 @@ import Ui from '../../assets/Ux/Ui.webp'
 
 const UiDevelopment = () => {
   return (
-    <section className="bg-black relative overflow-hidden">
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, #FF006E 1px, transparent 0)',
-          backgroundSize: '50px 50px'
-        }}></div>
-      </div>
+    <section className=" relative overflow-hidden">
+    
 
-      {/* Large Decorative Circles */}
-      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-[#FF006E]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#FF006E]/5 rounded-full blur-3xl"></div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-[89rem] mx-auto">
         {/* Hero Section */}
         <div className="min-h-[90vh] flex flex-col justify-center px-6 lg:px-16">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Left Content - Unique Layout */}
             <div className="flex-1 space-y-10">
-              {/* Floating Badge */}
-              <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#FF006E]/20 to-transparent border-l-4 border-[#FF006E] pl-4 pr-6 py-3">
+         
                 <span className="text-white font-semibold">UI/UX Design Services</span>
-              </div>
+     
 
               {/* Large Heading */}
               <div>

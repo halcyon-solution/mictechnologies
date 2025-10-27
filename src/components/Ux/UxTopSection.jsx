@@ -1,36 +1,42 @@
-import React from 'react'
-import MobileImage from '../../assets/Mobile/Mobile.webp'
+import React from 'react';
+import mobile from '../../assets/Services/CustomSoftware/Search-Engine-Marketing-SEM-services3.png'
 
-const UxTopSection= () => {
+
+export default function UxTopSection() {
   return (
-    <section className="w-full bg-black">
-      <div className='grid md:grid-cols-2 min-h-[70vh] lg:min-h-[80vh] max-w-7xl mx-auto'>
-        {/* Left Content Section */}
-        <div className='flex justify-center items-center px-6 py-16 md:px-10 lg:px-16'>
-          <div className='w-[96%] space-y-6'>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-             Ui Ux Services
-            </h1>
-            <p className="text-base text-justify sm:text-lg md:text-xl lg:text-xl text-gray-300 leading-relaxed">
-           we specialize in delivering professional UI/UX design services that combine creativity, usability, and technology. Our goal is to create modern, user-friendly, and visually appealing interfaces
-            </p>
-          </div>
+    <section className='w-full p-2 md:p-4 text-white min-h-[60vh] '>
+      
+      <div className='w-full lg:w-[90%] xl:w-[80%] 2xl:w-[70%] mx-auto h-full flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-4 py-6 md:py-8 lg:py-0'>
+        
+        {/* Text Content */}
+        <div className='w-full lg:w-[50%] flex flex-col justify-center gap-y-3 md:gap-y-4 order-2 lg:order-1 text-center lg:text-left'>
+          <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight'>
+                Ui Ux Services
+          </h2>
+          <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed'>
+              we specialize in delivering professional UI/UX design services that combine creativity, usability, and technology. Our goal is to create modern, user-friendly, and visually appealing interfaces
+          </p>
         </div>
-
-        {/* Right Image Section */}
-        <div className='flex justify-center items-center min-h-[70vh] lg:min-h-[80vh] px-6 py-16 md:px-10'>
-          <div className="w-full max-w-md lg:max-w-lg">
-            <img 
-              className="w-full h-auto object-contain drop-shadow-2xl" 
-              alt="Mobile App Development Services - iOS and Android Applications" 
-              src={MobileImage}
-              loading="lazy"
-            />
-          </div>
+        
+        {/* Image */}
+        <div className='w-full lg:w-[50%] flex justify-center items-center h-64 sm:h-72 md:h-80 lg:h-[50vh] order-1 lg:order-2'>
+          <img 
+            src={mobile}
+            className='w-full object-contain h-full' 
+            alt="Web Development Services" 
+          />
         </div>
       </div>
+      
+      {/* Breadcrumb */}
+      <div className='w-full rounded-lg md:rounded-xl h-10 md:h-12 bg-[#FF006E] mt-4 md:mt-6'>
+        <div className='w-full lg:w-[60%] xl:w-[42%] 2xl:w-[48%] h-full flex justify-center items-center px-4'>
+          <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium truncate'>
+            Services {'>'} Mobile App Development
+          </p>
+        </div>
+      </div>
+      
     </section>
-  )
+  );
 }
-
-export default UxTopSection
