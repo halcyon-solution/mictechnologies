@@ -2,10 +2,11 @@ import React from 'react'
 import Adobe from '../../assets/Ux/Adobe.svg'
 import Figma from '../../assets/Ux/Figma-logo.svg'
 
-const MobileDevelopmentPlatform = () => {
+const UiTools = () => {
   const platforms = [
-     { src: Adobe, alt: '', name: 'Adobe' },
-    { src: Figma, alt: 'Node.js - Backend Development for Mobile Apps', name: 'Figma' }
+     { src: Adobe, alt: 'Adobe - Creative Design Suite', name: 'Adobe' },
+    { src: Figma, alt: 'Figma - Collaborative Design Tool', name: 'Figma' },
+    { src: 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/coreldraw-icon.png', alt: 'CorelDRAW - Vector Graphics Editor', name: 'CorelDRAW' }
   ];
 
   return (
@@ -26,24 +27,22 @@ const MobileDevelopmentPlatform = () => {
               className='group relative flex items-center justify-center transition-transform hover:scale-110 duration-300'
             >
               <div className='flex flex-col gap-2.5'>
-<div>
-   <img 
-                src={platform.src} 
-                alt={platform.alt}
-                className='w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain  transition-all duration-300'
-                loading='lazy'
-              />
-</div>
+                <div>
+                  <img 
+                    src={platform.src} 
+                    alt={platform.alt}
+                    className='w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 object-contain transition-all duration-300'
+                    loading='lazy'
+                  />
+                </div>
 
-<div>
- {/* Label below icon */}
-              <p className=' text-gray-800 text-sm text-center  sm:text-base md:text-lg font-medium'>
-                {platform.name}
-              </p>
-</div>
+                <div>
+                  {/* Label below icon */}
+                  <p className='text-gray-800 text-sm text-center sm:text-base md:text-lg font-medium'>
+                    {platform.name}
+                  </p>
+                </div>
               </div>
-             
-             
             </div>
           ))}
         </div>
@@ -52,4 +51,4 @@ const MobileDevelopmentPlatform = () => {
   )
 }
 
-export default MobileDevelopmentPlatform
+export default UiTools

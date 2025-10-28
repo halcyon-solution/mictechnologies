@@ -4,7 +4,7 @@ import graphic from '../../../assets/Services/CustomSoftware/Search-Engine-Marke
 
 export default function WebDevelopmentHero() {
   return (
-    <section className='w-full p-2 md:p-4 text-white min-h-[60vh] bg-gray-950'>
+    <section className='w-full p-2 md:p-4 text-white min-h-[60vh] '>
       
       <div className='w-full lg:w-[90%] xl:w-[80%] 2xl:w-[70%] mx-auto h-full flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-4 py-6 md:py-8 lg:py-0'>
         

@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="space-y-2 pt-4">
               <div className="flex items-start space-x-2 text-sm text-gray-400">
                 <MapPin className="w-4 h-4 text-[#FF006E] flex-shrink-0 mt-0.5" />
-                <span>Karachi, Pakistan</span>
+                <span>London, UK</span>
               </div>
               <div className="flex items-center space-x-2 text-sm text-gray-400">
                 <Phone className="w-4 h-4 text-[#FF006E] flex-shrink-0" />

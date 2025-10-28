@@ -3,7 +3,7 @@ import { Search, Menu, Play } from 'lucide-react';
 
 export default function WebDevVsCMS() {
   return (
-    <section className='w-full min-h-screen py-8 md:py-12 lg:py-16 px-4 bg-black flex items-center'>
+    <section className='w-full min-h-screen py-8 md:py-12 lg:py-16 px-4  flex items-center'>
       <div className='max-w-7xl mx-auto w-full'>
         <div className='grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center'>
           

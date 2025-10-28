@@ -40,7 +40,7 @@ const AboutHero = () => {
 
           {/* Paragraph */}
           <p className="text-gray-300 text-base text-justify sm:text-base leading-relaxed max-w-prose">
-            Founded in USA and serving clients worldwide, Mic Tech
+            Founded in UK and serving clients worldwide, Mic Tech
             is a team of passionate strategists, data scientists, and advertising experts.
             Our journey began with a simple belief:{' '}
             <span className="text-white font-semibold">data-driven decisions are the cornerstone of success</span>.

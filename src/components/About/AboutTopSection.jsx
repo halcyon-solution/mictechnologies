@@ -5,6 +5,7 @@ import MetricImage from '../../assets/About/metric.webp'
 import cuttingedge from '../../assets/About/cuttingedge.webp'
 import centric from '../../assets/About/centric.webp'
 import support from '../../assets/About/support.webp'
+import { Link } from 'react-router-dom'
 
 const AboutTopSection = () => {
   const features = [
@@ -38,7 +39,7 @@ const AboutTopSection = () => {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
-                Welcome to MICTECH
+                Welcome to MIC TECH
               </h1>
               
               <div className="space-y-4">
@@ -62,10 +63,13 @@ const AboutTopSection = () => {
 
               {/* CTA Buttons */}
               <div className="w-[70%] mt-2">
+
+                <Link to='/contact'>
                 <button className="px-8 py-4 cursor-pointer hover:bg-white hover:text-[#FF006E] bg-[#FF006E] rounded-xl font-semibold text-sm hover:shadow-lg hover:shadow-pink-500/50 transition-all duration-300 hover:scale-105">
                   Get Started
                 </button>
-              
+              </Link>
+
               </div>
             </div>
           </div>

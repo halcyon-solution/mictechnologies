@@ -84,12 +84,7 @@ export default function SocialMediaTools() {
           ))}
         </div>
 
-        {/* Bottom Text */}
-        <div className="mt-12 md:mt-16 text-center">
-          <p className="text-gray-600 text-sm md:text-base">
-            And many more platforms tailored to your business needs
-          </p>
-        </div>
+        
 
       </div>
     </section>

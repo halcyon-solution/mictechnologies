@@ -7,13 +7,13 @@ import AboutWho from '../../components/About/AboutWho'
 
 const About = () => {
   return (
-    <div>
+    <main>
       <AboutTopSection/>
       <AboutWho/>
       <AboutHero/>
       <Aboutmystery/>
       <AboutCore/>
-    </div>
+    </main>
   )
 }
 

@@ -36,7 +36,7 @@ export default function GraphicApproach() {
     },
     {
       title: "Strategic Design Thinking",
-      description: "Our designs aren't just beautiful—they're strategically crafted to achieve your business objectives and drive measurable results."
+      description: "Our designs aren't just beautiful they're strategically crafted to achieve your business objectives and drive measurable results."
     },
     {
       title: "Versatile Design Solutions",

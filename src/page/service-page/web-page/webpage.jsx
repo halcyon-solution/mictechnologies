@@ -4,6 +4,7 @@ import WebTailorSol from '../../../components/Services/WebDevlopment/WebTailorSo
 import WebServices from '../../../components/Services/WebDevlopment/WebServices'
 import ServiceWhyChoose from '../../../components/UI/ServiceWhyChoose'
 import WebFaq from '../../../components/Services/WebDevlopment/WebFaq'
+import WebTools from '../../../components/Services/WebDevlopment/WebTools'
 
 export default function webpage() {
   return (
@@ -12,6 +13,7 @@ export default function webpage() {
     <WebTailorSol/>
     <WebServices/>
     <ServiceWhyChoose/>
+    <WebTools/>
     <WebFaq/>
    </main>
   )
