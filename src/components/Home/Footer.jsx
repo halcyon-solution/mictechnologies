@@ -87,31 +87,15 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link to="/services" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
-                  Services
-                </Link>
-              </li>
+              
               <li>
                 <Link to="/contact" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link to="/" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link to="/" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
-                  Blog
-                </Link>
-              </li>
+             
+             
+             
             </ul>
           </div>
 
