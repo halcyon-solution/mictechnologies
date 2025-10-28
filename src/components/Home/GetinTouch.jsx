@@ -142,7 +142,7 @@ export default function GetinTouch() {
             </div>
             <div>
               <p className='text-sm text-white/70'>Phone</p>
-              <p className='text-base font-semibold text-white'>+92 123 456 7890</p>
+              <p className='text-base font-semibold text-white'>+44 7566 777617</p>
             </div>
           </div>
 
@@ -152,7 +152,7 @@ export default function GetinTouch() {
             </div>
             <div>
               <p className='text-sm text-white/70'>Address</p>
-              <p className='text-base font-semibold text-white'>Karachi, Pakistan</p>
+              <p className='text-base font-semibold text-white'>1 Montague Court, 19-21 Roxborough Rd , London, United Kingdom</p>
             </div>
           </div>
 

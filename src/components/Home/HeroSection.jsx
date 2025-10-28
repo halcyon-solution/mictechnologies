@@ -54,7 +54,7 @@ export default function HeroSection() {
             <div className="rounded-lg w-full sm:w-72 h-14 mt-2">
               <Link to='/contact'>
               <button className="w-full rounded-lg border-2 border-[#FFFFFF94] text-white font-medium bg-[#FF006E] cursor-pointer hover:shadow-xl hover:border-2 hover:border-[#FF006E] hover:bg-white text-lg md:text-xl hover:text-[#FF006E] transition-all duration-300 h-full">
-            Get Started Today
+            Schedule a Call
               </button>  
               </Link>
                 

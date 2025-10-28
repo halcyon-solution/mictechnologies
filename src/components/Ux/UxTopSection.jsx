@@ -16,6 +16,11 @@ export default function UxTopSection() {
           <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed'>
               we specialize in delivering professional UI/UX design services that combine creativity, usability, and technology. Our goal is to create modern, user-friendly, and visually appealing interfaces
           </p>
+           <div className='mt-4 md:mt-6 flex justify-center lg:justify-start'>
+            <button className="px-8 py-3 md:px-10 md:py-4 rounded-lg border-2 border-[#FFFFFF94] text-white font-medium bg-[#FF006E] cursor-pointer hover:shadow-xl hover:border-2 hover:border-[#FF006E] hover:bg-white text-lg md:text-xl hover:text-[#FF006E] transition-all duration-300">
+              Schedule a Call
+            </button>
+          </div>
         </div>
         
         {/* Image */}

@@ -30,12 +30,13 @@ export default function Navbar() {
   }, [isMobileMenuOpen])
 
   const services = [
-    { name: 'Custom Software Development', path: '/services/custom-software' },
     { name: 'Graphic Designing', path: '/services/graphic-design' },
     { name: 'Social Media Marketing', path: '/services/social-media' },
     { name: 'Web Development', path: '/services/web-development' },
     { name: 'Mobile App Development', path: '/services/mobile-development' },
     { name: 'UI/UX Designing', path: '/services/uiux-design' },
+    { name: 'Custom Software Development', path: '/services/custom-software' },
+
   ]
 
 

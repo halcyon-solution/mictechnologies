@@ -90,7 +90,7 @@ export default function FeatureServices() {
                   size={44} 
                 />
                 <p className='text-xl md:text-2xl font-semibold text-white transition-colors duration-500 text-center px-2'>{service.title}</p>
-                <p className='text-sm text-center text-gray-400 group-hover:text-gray-200 transition-colors duration-500 px-2'>{service.description}</p>
+                <p className='text-[1rem] sm:text-sm text-center text-gray-400 group-hover:text-gray-200 transition-colors duration-500 px-2'>{service.description}</p>
               </Link>
             )
           })}

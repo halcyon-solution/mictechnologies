@@ -132,7 +132,7 @@ const AboutCore = () => {
       <h2 className="text-lg font-bold text-white transition-colors duration-300 font-poppins">
         {value.title}
       </h2>
-      <p className="text-gray-400 group-hover:text-gray-200 mt-2 text-sm transition-colors duration-300">{value.description}</p>
+      <p className="text-white group-hover:text-gray-200 mt-2 text-sm transition-colors duration-300">{value.description}</p>
     
     </motion.div>
   ))}

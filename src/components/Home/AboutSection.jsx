@@ -121,7 +121,7 @@ export default function AboutSection() {
                 <Lightbulb className='text-[#FF006E]' size={28} />
               </div>
               <p className='text-xl md:text-2xl font-semibold'>Innovation Driven</p>
-              <p className='text-sm text-gray-400'>We blend creativity with cutting-edge technology to deliver forward-thinking solutions</p>
+              <p className='text-[1rem] sm:text-sm text-gray-400'>We blend creativity with cutting-edge technology to deliver forward-thinking solutions</p>
             </div>
 
             <div className='w-full max-w-xs rounded-md border border-gray-800 mt-0 sm:-mt-2 flex p-6 md:p-7 gap-y-4 flex-col justify-center hover:border-[#FF006E] hover:shadow-lg hover:shadow-[#FF006E]/20 transition-all duration-300 min-h-[14rem] md:min-h-[15rem]'>
@@ -129,7 +129,7 @@ export default function AboutSection() {
                 <TrendingUp className='text-[#FF006E]' size={28} />
               </div>
               <p className='text-xl md:text-2xl font-semibold'>Growth Focused</p>
-              <p className='text-sm text-gray-400'>Helping businesses scale and succeed in the digital landscape</p>
+              <p className='text-[1rem] sm:text-sm text-gray-400'>Helping businesses scale and succeed in the digital landscape</p>
             </div>
 
             <div className='w-full max-w-xs border border-gray-800 rounded-md flex p-6 md:p-7 gap-y-4 flex-col justify-center hover:border-[#FF006E] hover:shadow-lg hover:shadow-[#FF006E]/20 transition-all duration-300 min-h-[14rem] md:min-h-[15rem]'>
@@ -137,7 +137,7 @@ export default function AboutSection() {
                 <RefreshCw className='text-[#FF006E]' size={28} />
               </div>
               <p className='text-xl md:text-2xl font-semibold'>Agile Approach</p>
-              <p className='text-sm text-gray-400'>Flexible development process that adapts to your evolving needs</p>
+              <p className='text-[1rem] sm:text-sm text-gray-400'>Flexible development process that adapts to your evolving needs</p>
             </div>
 
             <div className='w-full max-w-xs border border-gray-800 rounded-md mt-0 sm:-mt-4 flex p-6 md:p-7 gap-y-4 flex-col justify-center hover:border-[#FF006E] hover:shadow-lg hover:shadow-[#FF006E]/20 transition-all duration-300 min-h-[14rem] md:min-h-[15rem]'>
@@ -145,7 +145,7 @@ export default function AboutSection() {
                 <Headphones className='text-[#FF006E]' size={28} />
               </div>
               <p className='text-xl md:text-2xl font-semibold'>Client Centric</p>
-              <p className='text-sm text-gray-400'>Your success is our priority, building lasting partnerships through trust</p>
+              <p className='text-[1rem] sm:text-sm text-gray-400'>Your success is our priority, building lasting partnerships through trust</p>
             </div>
 
           </div>

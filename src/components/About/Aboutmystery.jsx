@@ -170,7 +170,7 @@ const Aboutmystery = () => {
       </h2>
 
       {/* Description */}
-      <p className="text-gray-400 group-hover:text-gray-200 text-sm sm:text-base leading-relaxed transition-colors duration-300">
+      <p className="text-white group-hover:text-gray-200 text-sm sm:text-base leading-relaxed transition-colors duration-300">
         {service.description}
       </p>
 

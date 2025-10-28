@@ -4,11 +4,14 @@ import Nodesvg from '../../assets/Mobile/nodejs.svg'
 
 const MobileDevelopmentPlatform = () => {
   const platforms = [
-     { src: Reactsvg, alt: 'React Native - Cross-Platform Mobile Development', name: 'React Native' },
+    { src: Reactsvg, alt: 'React Native - Cross-Platform Mobile Development', name: 'React Native' },
     { src: Nodesvg, alt: 'Node.js - Backend Development for Mobile Apps', name: 'Node.js' },
-    { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', alt: 'Flutter - Cross-Platform Mobile Development', name: 'Flutter' }
+    { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg', alt: 'Flutter - Cross-Platform Mobile Development', name: 'Flutter' },
+    { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg', alt: 'Kotlin - Native Android Development', name: 'Kotlin' },
+    { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg', alt: 'Android - Native Mobile Development', name: 'Android' },
+    { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ionic/ionic-original.svg', alt: 'Ionic - Hybrid Mobile Development', name: 'Ionic' },
+    { src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg', alt: 'iOS - Native Apple Development', name: 'iOS' }
   ];
-
   return (
     <section className='bg-white py-16'>
       <div className='max-w-7xl mx-auto px-6 md:px-10 lg:px-16'>
