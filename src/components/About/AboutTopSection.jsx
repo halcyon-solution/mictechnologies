@@ -115,7 +115,7 @@ const AboutTopSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose MICTECH?
+              Why Choose MIC TECH?
             </h2>
             <div className="h-1 w-20 bg-[#FF006E] rounded-full mx-auto"></div>
           </div>
