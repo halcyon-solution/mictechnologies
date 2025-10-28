@@ -74,7 +74,7 @@
 
 import React from 'react'
 import { Workflow, Code2, FileText } from 'lucide-react'
-import robotimg from '../../assets/metrics-masters-testimonial-image-with-logo-pink-eye.webp'
+import robotimg from '../../assets/About/1 one.png'
 export default function WhyChooseUs() {
  
   

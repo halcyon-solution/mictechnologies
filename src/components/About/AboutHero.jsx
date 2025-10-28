@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../../assets/About/heroimage.webp'
+import HeroImage from '../../assets/About/4 ONE.png'
 
 const AboutHero = () => {
   return (
@@ -23,7 +23,7 @@ const AboutHero = () => {
               loading="lazy"
             />
             {/* soft gradient overlay for better contrast */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+           
           </div>
         </div>
 

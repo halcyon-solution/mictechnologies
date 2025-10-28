@@ -1,5 +1,5 @@
 import React from 'react'
-import contact from '../../assets/Contact/Contact.webp'
+import contact from '../../assets/Contact/futuristic-robot-sits-front-computer-screen-with-glowing-code_14117-1130869.jpg'
 
 const ContactTopSection = () => {
   return (
@@ -9,12 +9,11 @@ const ContactTopSection = () => {
         aria-label="Contact us background image"
       >
         {/* Background Image */}
-        <img 
-          src={contact} 
-          className='absolute w-full h-full object-cover inset-0' 
-          alt="Contact background" 
-        />
-
+      <img 
+  src={contact} 
+  className='absolute w-full h-full  inset-0' 
+  alt="Contact background" 
+/>
         {/* Pink Overlay */}
         <div className='absolute inset-0 bg-[#FF006E]/40'></div>
 

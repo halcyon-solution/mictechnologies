@@ -1,6 +1,6 @@
 import React from 'react'
 import { Target, Lightbulb, Rocket, Zap } from 'lucide-react'
-import AboutImage from '../../assets/About/Capture.JPG'
+import AboutImage from '../../assets/About/3 ONE.jpg'
 import MetricImage from '../../assets/About/metric.webp'
 import cuttingedge from '../../assets/About/cuttingedge.webp'
 import centric from '../../assets/About/centric.webp'
