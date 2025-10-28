@@ -71,7 +71,7 @@ export default function FeatureServices() {
       `}</style>
 
       <div className='w-full text-white flex flex-col gap-y-4 justify-end items-center min-h-[12rem] md:h-48'>
-        <p className='text-sm text-[#D5D5D5]'>SOLUTIONS</p>
+        <p className='text-sm text-[#FF006E]'>SOLUTIONS</p>
         <h2 className='text-2xl sm:text-3xl md:text-4xl text-center font-semibold px-4'>
           We Are Offering All Kinds of IT Solutions Services
         </h2>

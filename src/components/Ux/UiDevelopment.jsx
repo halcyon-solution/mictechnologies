@@ -15,7 +15,6 @@ const UiDevelopment = () => {
             {/* Left Content - Unique Layout */}
             <div className="flex-1 space-y-10">
          
-                <span className="text-white font-semibold">UI/UX Design Services</span>
      
 
               {/* Large Heading */}

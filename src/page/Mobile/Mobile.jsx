@@ -4,6 +4,8 @@ import MobileDevelopmentSection from '../../components/Mobile/MobileDevelopmentS
 import MobileDevelopmentServices from '../../components/Mobile/MobileDevelopmentServices'
 import MobileDevelopmentPlatform from '../../components/Mobile/MobileDevelopmentPlatform'
 import MobileQuestions from '../../components/Mobile/MobileQuestions'
+import MobilePortfolio from '../../components/Mobile/MobilePortfolio'
+
 
 const Mobile = () => {
   return (
@@ -12,6 +14,7 @@ const Mobile = () => {
         <MobileDevelopmentSection/>
         <MobileDevelopmentServices/>
         <MobileDevelopmentPlatform/>
+        <MobilePortfolio/>
         <MobileQuestions/>
     </section>
   )

@@ -99,7 +99,7 @@ const ContactHeroSection = () => {
               {/* Header */}
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 px-4 py-2  w-fit">
-                  <span className="text-xs font-medium text-white tracking-wide uppercase">
+                  <span className="text-xs font-medium text-[#FF006E] tracking-wide uppercase">
                     Get In Touch
                   </span>
                 </div>

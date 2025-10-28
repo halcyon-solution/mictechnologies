@@ -5,6 +5,8 @@ import WebServices from '../../../components/Services/WebDevlopment/WebServices'
 import ServiceWhyChoose from '../../../components/UI/ServiceWhyChoose'
 import WebFaq from '../../../components/Services/WebDevlopment/WebFaq'
 import WebTools from '../../../components/Services/WebDevlopment/WebTools'
+import WebPortfolio from '../../../components/Services/WebDevlopment/WebPortfolio'
+
 
 export default function webpage() {
   return (
@@ -12,8 +14,10 @@ export default function webpage() {
     <WebHero/>
     <WebTailorSol/>
     <WebServices/>
-    <ServiceWhyChoose/>
+
+     <ServiceWhyChoose/>
     <WebTools/>
+        <WebPortfolio/>
     <WebFaq/>
    </main>
   )

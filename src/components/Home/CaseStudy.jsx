@@ -243,7 +243,7 @@ const CaseStudySection = () => {
           
           {/* Left Content */}
           <div className="w-full lg:w-[35%] space-y-6 md:space-y-8">
-            <p className="text-[#D5D5D5] text-xs md:text-sm font-bold tracking-widest uppercase">
+            <p className="text-[#FF006E] text-xs md:text-sm font-bold tracking-widest uppercase">
               CASE STUDY
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1]">

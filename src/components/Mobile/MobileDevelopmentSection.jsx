@@ -15,7 +15,6 @@ const MobileDevelopmentSection = () => {
               {/* Floating Badge */}
  
                
-                <span className="text-white font-semibold">Mobile App Development</span>
         
 
               {/* Large Heading with Different Layout */}

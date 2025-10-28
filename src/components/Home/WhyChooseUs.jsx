@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
         <div className='w-full lg:w-[50%] flex justify-center lg:justify-start items-start order-2 lg:order-2'>
           <div className='w-full max-w-xl p-2 gap-6 flex flex-col justify-center'>
 
-            <p className='text-sm text-black font-semibold'>WHY CHOOSE US</p>
+            <p className='text-sm text-[#FF006E] font-semibold'>WHY CHOOSE US</p>
             <h2 className='text-3xl md:text-4xl font-semibold text-black leading-snug'>
               We Create Result-Oriented Dynamic Applications
             </h2>

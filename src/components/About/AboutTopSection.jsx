@@ -33,7 +33,7 @@ const AboutTopSection = () => {
             <div className="flex flex-col items-center md:items-start gap-8 max-w-2xl text-center md:text-left">
               {/* Badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 transition-all duration-300">
-                <span className="text-xs sm:text-sm font-medium text-white tracking-wide uppercase">
+                <span className="text-xs sm:text-sm font-medium text-[#FF006E] tracking-wide uppercase">
                   About Us
                 </span>
               </div>

@@ -4,6 +4,7 @@ import UiDevelopment from '../../components/Ux/UiDevelopment'
 import UiServices from '../../components/Ux/UiServices'
 import UiTools from '../../components/Ux/UiTools'
 import UiQuestions from '../../components/Ux/UiQuestions'
+import UiPortfolio from '../../components/Ux/UiPortfolio'
 
 const Ui = () => {
   return (
@@ -12,6 +13,7 @@ const Ui = () => {
                 <UiDevelopment/>
         <UiServices/>
         <UiTools/>
+        <UiPortfolio/>
         <UiQuestions/>
       
     </div>

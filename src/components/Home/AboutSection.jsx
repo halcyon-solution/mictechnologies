@@ -155,7 +155,7 @@ export default function AboutSection() {
         <div className='w-full  md:p-3 lg:p-0 2xl:w-[50%] xl:w-[75%] lg:w-[90%]  flex justify-center md:justify-start lg:justify-start items-start order-1 lg:order-1 2xl:order-2'>
           <div className='w-full max-w-xl p-2 gap-5 md:gap-3 flex flex-col justify-center'>
 
-            <p className='text-sm text-[#D5D5D5] font-medium'>ABOUT US</p>
+            <p className='text-sm text-[#FF006E] font-medium'>ABOUT US</p>
             <h2 className='text-3xl md:text-4xl font-semibold text-white leading-snug'>
               Building Digital Excellence Since Day One
             </h2>

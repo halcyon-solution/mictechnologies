@@ -5,6 +5,8 @@ import GraphicService from '../../../components/Services/GraphicDesign/GraphicSe
 import ServiceWhyChoose from '../../../components/UI/ServiceWhyChoose'
 import GraphicTools from '../../../components/Services/GraphicDesign/GraphicTools'
 import GraphicFaq from '../../../components/Services/GraphicDesign/GraphicFaq'
+import GraphicPortfolio from '../../../components/Services/GraphicDesign/GraphicPorfolio'
+
 
 export default function graphicpage() {
   return (
@@ -14,6 +16,7 @@ export default function graphicpage() {
        <GraphicService/>
        < ServiceWhyChoose/>
        <GraphicTools/>
+       <GraphicPortfolio/>
        <GraphicFaq/>
         </main>
   )

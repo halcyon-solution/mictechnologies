@@ -46,7 +46,7 @@ export default function HeroSection() {
         {/* Main Content */}
         <div className="w-full md:p-3 lg:p-0  md:w-[70%] flex gap-y-4 md:gap-y-3 flex-col xl:w-[88%] 2xl:w-[60%] justify-end md:items-start lg:items-center xl:items-end 2xl:items-start h-full md:h-[60%] pt-8 md:pt-0">
           <div className="w-full md:w-[85%] text-white flex flex-col gap-y-4 md:gap-y-5">
-            <p className="text-base md:text-xl">Transform Your Vision Into Reality</p>
+            <p className="text-base md:text-xl text-[#FF006E]">Transform Your Vision Into Reality</p>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-semibold">
               Innovative Software Solutions That Drive Results
             </h2>
