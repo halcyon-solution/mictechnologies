@@ -10,7 +10,7 @@ import WebPortfolio from '../../../components/Services/WebDevlopment/WebPortfoli
 
 export default function webpage() {
   return (
-   <main>
+   <main className='overflow-x-hidden'>
     <WebHero/>
     <WebTailorSol/>
     <WebServices/>
