@@ -40,12 +40,7 @@ export default function FeatureServices() {
       description: 'Intuitive interfaces that prioritize user satisfaction and usability',
       path: '/services/uiux-design'
     },
-    {
-      icon: Server,
-      title: 'Rental Software Solution',
-      description: 'Comprehensive rental management systems to streamline your operations',
-      path: '/services/rental-software'
-    }
+   
   ]
 
   const handleNavigation = (path) => {
