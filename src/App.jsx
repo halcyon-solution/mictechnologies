@@ -30,7 +30,7 @@ export default function App(){
     <Router>
       <ScrollToTop />
       <Navbar/>
-      <main className='pt-20'> {/* Navbar ki height ke barabar */}
+      <main className='pt-20 '> {/* Navbar ki height ke barabar */}
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/services/seo" element={<Seo />} />

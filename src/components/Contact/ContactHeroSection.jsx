@@ -8,6 +8,7 @@ const ContactHeroSection = () => {
     company: '',
     phone: '',
     projectType: '',
+    service: '',
     message: ''
   })
 
@@ -39,6 +40,7 @@ const ContactHeroSection = () => {
       formDataToSend.append('name', formData.name)
       formDataToSend.append('from_email', formData.email) // Sender's email
       formDataToSend.append('phone', formData.phone)
+      formDataToSend.append('service', formData.service)
       formDataToSend.append('message', formData.message)
       
       // Additional fields for better email formatting
@@ -61,6 +63,7 @@ const ContactHeroSection = () => {
           company: '',
           phone: '',
           projectType: '',
+          service: '',
           message: ''
         })
       } else {
@@ -279,6 +282,36 @@ const ContactHeroSection = () => {
                     />
                   </div>
 
+                  {/* Service */}
+                  <div className="relative">
+                    <label className="block text-sm font-medium text-gray-300 mb-2">
+                      Service of Interest *
+                    </label>
+                    <select
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 pr-12 bg-gray-900/50 border border-gray-700/50 rounded-xl text-white focus:outline-none focus:border-pink-500/50 focus:ring-1 focus:ring-pink-500/50 transition-all duration-300 appearance-none cursor-pointer"
+                    >
+                      <option value="" className="bg-gray-900 text-gray-400">Select a service...</option>
+                      <option value="Custom Software Development" className="bg-gray-900 text-white">Custom Software Development</option>
+                      <option value="Web Development" className="bg-gray-900 text-white">Web Development</option>
+                      <option value="Mobile App Development" className="bg-gray-900 text-white">Mobile App Development</option>
+                      <option value="UI/UX Design" className="bg-gray-900 text-white">UI/UX Design</option>
+                      <option value="Graphic Design" className="bg-gray-900 text-white">Graphic Design</option>
+                      <option value="Social Media Marketing" className="bg-gray-900 text-white">Social Media Marketing</option>
+                      <option value="SEO Services" className="bg-gray-900 text-white">SEO Services</option>
+                      <option value="Consultation" className="bg-gray-900 text-white">Consultation</option>
+                      <option value="Other" className="bg-gray-900 text-white">Other</option>
+                    </select>
+                    <div className="absolute right-4 top-12 pointer-events-none">
+                      <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </div>
+                  </div>
+
                   {/* Message */}
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -300,7 +333,7 @@ const ContactHeroSection = () => {
                     type="submit"
                     onClick={handleSubmit}
                     disabled={isSubmitting}
-                    className={`w-full px-6 py-4 rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 ${
+                    className={`w-full cursor-pointer px-6 py-4 rounded-xl font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 ${
                       isSubmitting 
                         ? 'bg-gray-600 cursor-not-allowed' 
                         : 'bg-[#FF006E] hover:shadow-2xl hover:shadow-pink-500/50 hover:scale-[1.02]'

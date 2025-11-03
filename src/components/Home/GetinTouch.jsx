@@ -117,6 +117,7 @@ export default function GetinTouch() {
     email: '',
     phone: '',
     website: '',
+    service: '',
     message: ''
   })
 
@@ -149,6 +150,7 @@ export default function GetinTouch() {
       formDataToSend.append('from_email', formData.email) // Sender's email
       formDataToSend.append('phone', formData.phone)
       formDataToSend.append('website', formData.website)
+      formDataToSend.append('service', formData.service)
       formDataToSend.append('message', formData.message)
       
       // Additional fields for better email formatting
@@ -170,6 +172,7 @@ export default function GetinTouch() {
           email: '',
           phone: '',
           website: '',
+          service: '',
           message: ''
         })
       } else {
@@ -309,6 +312,33 @@ export default function GetinTouch() {
               />
             </div>
 
+            {/* Service Selection */}
+            <div className='relative'>
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                required
+                className='w-full px-4 py-3 pr-12 rounded-lg border border-gray-300 focus:border-[#FF006E] focus:outline-none focus:ring-2 focus:ring-[#FF006E]/20 transition-all appearance-none cursor-pointer bg-white'
+              >
+                <option value="" className="text-gray-500">Select a service... *</option>
+                <option value="Custom Software Development">Custom Software Development</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="SEO Services">SEO Services</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Other">Other</option>
+              </select>
+              <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+
             <textarea 
               name="message"
               value={formData.message}
@@ -322,7 +352,7 @@ export default function GetinTouch() {
             <button 
               type="submit"
               disabled={isSubmitting}
-              className={`w-full sm:w-fit px-8 py-3 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 ${
+              className={`w-full cursor-pointer sm:w-fit px-8 py-3 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 ${
                 isSubmitting 
                   ? 'bg-gray-400 cursor-not-allowed text-white' 
                   : 'bg-[#FF006E] text-white hover:bg-[#FF006E]/90 hover:shadow-lg hover:shadow-[#FF006E]/30'

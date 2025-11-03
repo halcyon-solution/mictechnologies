@@ -57,7 +57,7 @@ export default function GraphicApproach() {
             </h2>
 
             <p className='text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed'>
-              In a highly competitive digital landscape, MIC Tech stands out as a paragon of creativity and excellence. We are a Pakistan-based, award-winning graphic design company with a strong commitment to delivering visually stunning results. Our unique value proposition lies in our approach to graphic design, which is rooted in the following key areas:
+              In a highly competitive digital landscape, MIC Tech stands out as a paragon of creativity and excellence. We are a UK-based, award-winning graphic design company with a strong commitment to delivering visually stunning results. Our unique value proposition lies in our approach to graphic design, which is rooted in the following key areas:
             </p>
 
             <ul className='flex flex-col xl:pl-8 gap-4 sm:gap-5'>
