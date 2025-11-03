@@ -73,6 +73,7 @@
 // }
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function CTA() {
   return (
@@ -134,9 +135,11 @@ export default function CTA() {
         </div>
 
         <div className='w-full md:w-auto flex justify-center md:justify-end'>
-          <button className='px-6 cursor-pointer md:px-8 py-3 md:py-4 bg-white text-[#FF006E] font-bold text-base md:text-lg rounded-full hover:bg-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-300'>
-            Get In Touch
-          </button>
+          <Link to="/contact">
+            <button className='px-6 cursor-pointer md:px-8 py-3 md:py-4 bg-white text-[#FF006E] font-bold text-base md:text-lg rounded-full hover:bg-gray-100 hover:shadow-2xl hover:scale-105 transition-all duration-300'>
+              Get In Touch
+            </button>
+          </Link>
         </div>
 
       </div>
