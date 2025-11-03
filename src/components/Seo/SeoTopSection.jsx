@@ -1,6 +1,5 @@
 import React from 'react';
 import { Smartphone, Zap, Code2, Rocket, Shield, Award, Users, Star } from 'lucide-react';
-import Ui from '../../assets/Ux/Ui.webp'
 import SeoBanner from './SeoBanner';
 
 const SeoTopSection = () => {
@@ -76,7 +75,7 @@ const SeoTopSection = () => {
                 <div className="absolute top-0 right-0 w-48 h-48 bg-[#FF006E]/20 rounded-full blur-3xl"></div>
                 <div className="relative p-8">
                   <img 
-                    src={Ui}
+                    src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600&h=400&fit=crop&q=80"
                     alt="SEO Services and Search Engine Optimization Results"
                     className="w-full h-auto rounded-2xl shadow-2xl"
                     loading="lazy"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CaseStudySection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,37 +20,50 @@ const CaseStudySection = () => {
       title: 'Custom Software Development',
       category: 'IT Technology',
       image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop',
-      description: 'Tailored solutions for your unique business needs'
+      description: 'Tailored solutions for your unique business needs',
+      route: '/services/custom-software'
     },
     {
       title: 'Graphic Designing',
       category: 'Creative Services',
       image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop',
-      description: 'Visual excellence that captures your brand essence'
+      description: 'Visual excellence that captures your brand essence',
+      route: '/services/graphic-design'
     },
     {
       title: 'Social Media Marketing',
       category: 'Digital Marketing',
       image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop',
-      description: 'Amplify your presence across all platforms'
+      description: 'Amplify your presence across all platforms',
+      route: '/services/social-media'
     },
     {
       title: 'Web Development',
       category: 'IT Technology',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop',
-      description: 'Modern, responsive websites built for success'
+      description: 'Modern, responsive websites built for success',
+      route: '/services/web-development'
     },
     {
       title: 'Mobile App Development',
       category: 'IT Technology',
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop',
-      description: 'Native and cross-platform mobile solutions'
+      description: 'Native and cross-platform mobile solutions',
+      route: '/services/mobile-development'
     },
     {
       title: 'UI/UX Designing',
       category: 'Creative Services',
       image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&h=600&fit=crop',
-      description: 'User-centered design that delights and converts'
+      description: 'User-centered design that delights and converts',
+      route: '/services/uiux-design'
+    },
+    {
+      title: 'SEO',
+      category: 'Digital Marketing',
+      image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&h=600&fit=crop',
+      description: 'Search engine optimization to boost your online visibility',
+      route: '/services/seo'
     },
   ];
 
@@ -121,35 +135,37 @@ const CaseStudySection = () => {
                     key={index}
                     className="flex-shrink-0 w-[280px]"
                   >
-                    <div className="group relative overflow-hidden rounded-xl bg-gray-900 h-[420px] cursor-pointer shadow-2xl">
-                      {/* Background Image */}
-                      <div 
-                        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                        style={{ backgroundImage: `url(${service.image})` }}
-                      />
-                      
-                      {/* Overlay Gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#05010F] via-[#05010F]/70 to-transparent opacity-90" />
-                      
-                      {/* Content */}
-                      <div className="absolute bottom-0 left-0 right-0 p-7 space-y-3">
-                        <p className="text-white text-xs font-bold tracking-widest uppercase">
-                          {service.category}
-                        </p>
-                        <h3 className="text-white text-2xl font-bold leading-tight pr-4">
-                          {service.title}
-                        </h3>
-                        <p className="text-gray-300 text-sm leading-relaxed opacity-0 transform translate-y-4 
-                                    transition-all duration-500 group-hover:opacity-100 
-                                    group-hover:translate-y-0 pr-4">
-                          {service.description}
-                        </p>
-                      </div>
+                    <Link to={service.route}>
+                      <div className="group relative overflow-hidden rounded-xl bg-gray-900 h-[420px] cursor-pointer shadow-2xl">
+                        {/* Background Image */}
+                        <div 
+                          className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                          style={{ backgroundImage: `url(${service.image})` }}
+                        />
+                        
+                        {/* Overlay Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#05010F] via-[#05010F]/70 to-transparent opacity-90" />
+                        
+                        {/* Content */}
+                        <div className="absolute bottom-0 left-0 right-0 p-7 space-y-3">
+                          <p className="text-white text-xs font-bold tracking-widest uppercase">
+                            {service.category}
+                          </p>
+                          <h3 className="text-white text-2xl font-bold leading-tight pr-4">
+                            {service.title}
+                          </h3>
+                          <p className="text-gray-300 text-sm leading-relaxed opacity-0 transform translate-y-4 
+                                      transition-all duration-500 group-hover:opacity-100 
+                                      group-hover:translate-y-0 pr-4">
+                            {service.description}
+                          </p>
+                        </div>
 
-                      {/* Hover Border Effect */}
-                      <div className="absolute inset-0 border-2 border-[#FF006E] opacity-0 
-                                    group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
-                    </div>
+                        {/* Hover Border Effect */}
+                        <div className="absolute inset-0 border-2 border-[#FF006E] opacity-0 
+                                      group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
+                      </div>
+                    </Link>
                   </div>
                 ))}
               </div>

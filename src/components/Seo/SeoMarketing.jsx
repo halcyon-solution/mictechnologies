@@ -157,7 +157,7 @@ const SeoMarketing = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 text-left">
             {services.map((s, i) => (
-              <div key={i} className="bg-black border border-gray-800 rounded-3xl p-8 hover:border-[#FF006E]/50 transition-all">
+              <div key={i} className=" border border-gray-800 rounded-3xl p-8 hover:border-[#FF006E]/50 transition-all">
                 <div className="flex items-start gap-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#FF006E] to-[#ff338c] rounded-2xl flex items-center justify-center flex-shrink-0">
                     {s.icon}

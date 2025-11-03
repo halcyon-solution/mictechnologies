@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Code, Palette, Share2, Globe, Smartphone, Layers, Server } from 'lucide-react'
+import { Code, Palette, Share2, Globe,LineChart, Smartphone, Layers, Server } from 'lucide-react'
 
 export default function FeatureServices() {
   const services = [
@@ -39,6 +39,12 @@ export default function FeatureServices() {
       title: 'UI/UX Designing',
       description: 'Intuitive interfaces that prioritize user satisfaction and usability',
       path: '/services/uiux-design'
+    },
+      {
+      icon: LineChart,
+      title: 'SE0',
+      description: 'Boost your online visibility and rankings with expert SEO optimization.',
+      path: '/services/seo'
     },
    
   ]
