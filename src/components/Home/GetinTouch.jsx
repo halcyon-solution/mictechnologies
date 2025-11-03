@@ -107,10 +107,82 @@
 //   )
 // }
 
-import React from 'react'
+import React, { useState } from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { WEB3FORMS_CONFIG } from '../../config/web3forms'
 
 export default function GetinTouch() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    website: '',
+    message: ''
+  })
+
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState(null) // 'success', 'error', null
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      const formDataToSend = new FormData()
+      
+      // Web3Forms access key from config
+      formDataToSend.append('access_key', WEB3FORMS_CONFIG.ACCESS_KEY)
+      
+      // Recipient email (where form submissions will be sent)
+      formDataToSend.append('email', WEB3FORMS_CONFIG.RECIPIENT_EMAIL)
+      
+      // Form fields
+      formDataToSend.append('name', formData.name)
+      formDataToSend.append('from_email', formData.email) // Sender's email
+      formDataToSend.append('phone', formData.phone)
+      formDataToSend.append('website', formData.website)
+      formDataToSend.append('message', formData.message)
+      
+      // Additional fields for better email formatting
+      formDataToSend.append('subject', 'New Contact Form Submission from MIC Technologies Home Page')
+      formDataToSend.append('from_name', formData.name)
+      
+      const response = await fetch(WEB3FORMS_CONFIG.API_URL, {
+        method: 'POST',
+        body: formDataToSend
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitStatus('success')
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          website: '',
+          message: ''
+        })
+      } else {
+        setSubmitStatus('error')
+        console.error('Form submission error:', result)
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+      console.error('Network error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
   return (
     <section className='w-full flex justify-center items-center min-h-screen 2xl:min-h-[50vh] py-12 md:py-16 px-4 bg-white'>
 
@@ -132,7 +204,7 @@ export default function GetinTouch() {
     </div>
     <div>
       <p className='text-sm text-white/70'>Email</p>
-      <p className='text-base font-semibold text-white'>info@mictech.com</p>
+      <p className='text-base font-semibold text-white'>info@mictechnologies.co.uk</p>
     </div>
   </a>
 
@@ -168,17 +240,52 @@ export default function GetinTouch() {
             <h2 className='text-2xl md:text-3xl font-bold text-black mt-2'>Fill The Form Below</h2>
           </div>
 
-          <form className='flex flex-col gap-4 md:gap-5'>
+          <form onSubmit={handleSubmit} className='flex flex-col gap-4 md:gap-5'>
             
+            {/* Status Messages */}
+            {submitStatus === 'success' && (
+              <div className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <p className="text-green-700 text-sm font-medium">
+                    Message sent successfully! We'll get back to you soon.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {submitStatus === 'error' && (
+              <div className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <p className="text-red-700 text-sm font-medium">
+                    Failed to send message. Please try again or contact us directly.
+                  </p>
+                </div>
+              </div>
+            )}
+
             <div className='flex flex-col sm:flex-row gap-4'>
               <input 
                 type="text" 
-                placeholder="Name" 
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Name *" 
+                required
                 className='w-full sm:w-1/2 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#FF006E] focus:outline-none focus:ring-2 focus:ring-[#FF006E]/20 transition-all'
               />
               <input 
                 type="email" 
-                placeholder="E-Mail" 
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="E-Mail *" 
+                required
                 className='w-full sm:w-1/2 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#FF006E] focus:outline-none focus:ring-2 focus:ring-[#FF006E]/20 transition-all'
               />
             </div>
@@ -186,27 +293,52 @@ export default function GetinTouch() {
             <div className='flex flex-col sm:flex-row gap-4'>
               <input 
                 type="tel" 
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 placeholder="Phone Number" 
                 className='w-full sm:w-1/2 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#FF006E] focus:outline-none focus:ring-2 focus:ring-[#FF006E]/20 transition-all'
               />
               <input 
                 type="text" 
+                name="website"
+                value={formData.website}
+                onChange={handleChange}
                 placeholder="Your Website" 
                 className='w-full sm:w-1/2 px-4 py-3 rounded-lg border border-gray-300 focus:border-[#FF006E] focus:outline-none focus:ring-2 focus:ring-[#FF006E]/20 transition-all'
               />
             </div>
 
             <textarea 
-              placeholder="Your message Here" 
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Your message Here *" 
               rows="5"
+              required
               className='w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#FF006E] focus:outline-none focus:ring-2 focus:ring-[#FF006E]/20 transition-all resize-none'
             ></textarea>
 
             <button 
               type="submit"
-              className='w-full sm:w-fit px-8 py-3 bg-[#FF006E] text-white font-semibold rounded-lg hover:bg-[#FF006E]/90 hover:shadow-lg hover:shadow-[#FF006E]/30 transition-all duration-300'
+              disabled={isSubmitting}
+              className={`w-full sm:w-fit px-8 py-3 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 ${
+                isSubmitting 
+                  ? 'bg-gray-400 cursor-not-allowed text-white' 
+                  : 'bg-[#FF006E] text-white hover:bg-[#FF006E]/90 hover:shadow-lg hover:shadow-[#FF006E]/30'
+              }`}
             >
-              Submit Now
+              {isSubmitting ? (
+                <>
+                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Submitting...
+                </>
+              ) : (
+                'Submit Now'
+              )}
             </button>
 
           </form>
