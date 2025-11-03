@@ -12,6 +12,7 @@ import Socialmediapage from './page/service-page/socialmedia-page/socialmediapag
 import Webpage from './page/service-page/web-page/webpage'
 import UI from './page/UI/Ui'
 import Mobile from './page/Mobile/Mobile'
+import Seo from './page/Seo/Seo'
 
 // ScrollToTop component
 function ScrollToTop() {
@@ -32,6 +33,7 @@ export default function App(){
       <main className='pt-20'> {/* Navbar ki height ke barabar */}
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/services/seo" element={<Seo />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/custom-software" element={<CustomSoftwarePage/>}/>

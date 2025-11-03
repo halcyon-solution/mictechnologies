@@ -36,6 +36,7 @@ export default function Navbar() {
     { name: 'Mobile App Development', path: '/services/mobile-development' },
     { name: 'UI/UX Designing', path: '/services/uiux-design' },
     { name: 'Custom Software Development', path: '/services/custom-software' },
+    { name: 'SEO ', path: '/services/seo' },
 
   ]
 

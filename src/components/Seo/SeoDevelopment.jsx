@@ -2,7 +2,7 @@ import React from 'react';
 import mobile from '../../assets/Services/CustomSoftware/Search-Engine-Marketing-SEM-services3.png'
 
 
-export default function UxTopSection() {
+export default function SeoDevelopment() {
   return (
     <section className='w-full p-2 md:p-4 text-white min-h-[60vh] '>
       
@@ -11,10 +11,10 @@ export default function UxTopSection() {
         {/* Text Content */}
         <div className='w-full lg:w-[50%] flex flex-col justify-center gap-y-3 md:gap-y-4 order-2 lg:order-1 text-center lg:text-left'>
           <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight'>
-                Ui Ux Services
+                SEO
           </h2>
           <p className='text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed'>
-              we specialize in delivering professional UI/UX design services that combine creativity, usability, and technology. Our goal is to create modern, user-friendly, and visually appealing interfaces
+           Boost your online visibility, increase qualified traffic, and dominate search engine results with our comprehensive SEO marketing strategies tailored for your business success.
           </p>
            <div className='mt-4 md:mt-6 flex justify-center lg:justify-start'>
             <button className="px-8 py-3 md:px-10 md:py-4 rounded-lg border-2 border-[#FFFFFF94] text-white font-medium bg-[#FF006E] cursor-pointer hover:shadow-xl hover:border-2 hover:border-[#FF006E] hover:bg-white text-lg md:text-xl hover:text-[#FF006E] transition-all duration-300">
@@ -32,14 +32,16 @@ export default function UxTopSection() {
           />
         </div>
       </div>
-      
+
+
       <div className='w-full rounded-lg md:rounded-xl h-10 md:h-12 bg-[#FF006E] mt-4 md:mt-6'>
-        <div className='w-full lg:w-[60%] xl:w-[42%] 2xl:w-[45%] h-full flex justify-center items-center px-4'>
+        <div className='w-full lg:w-[60%] xl:w-[42%] 2xl:w-[38%] h-full flex justify-center items-center px-4'>
           <p className='text-sm sm:text-base md:text-lg lg:text-xl font-medium truncate'>
-            Services {'>'} UI UX
+            Services {'>'} Seo
           </p>
         </div>
       </div>
+      
       {/* Breadcrumb */}
     
       

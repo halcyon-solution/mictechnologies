@@ -94,6 +94,11 @@ export default function Footer() {
                   UI/UX Designing
                 </Link>
               </li>
+              <li>
+                <Link to="/services/seo" className="text-gray-400 hover:text-[#FF006E] transition-colors text-xs sm:text-sm block">
+                  SEO
+                </Link>
+              </li>
             
             </ul>
           </div>

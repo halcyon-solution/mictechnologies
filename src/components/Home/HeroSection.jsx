@@ -38,7 +38,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function HeroSection() {
+export default function 
+HeroSection() {
   return (
     <section className="w-full  flex justify-center items-start sm:items-center min-h-fit px-3 lg:px-0 py-12 md:py-0 md:h-[75vh] xl:h-[80vh]">
       <div className="w-full  max-w-[81rem] h-full">
