@@ -1,0 +1,25 @@
+{
+  "name": "mictechnologies-backend",
+  "version": "1.0.0",
+  "description": "Backend API for MIC Technologies contact form",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["express", "contact-form", "email"],
+  "author": "MIC Technologies",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "nodemailer": "^6.9.16",
+    "dotenv": "^16.4.7",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

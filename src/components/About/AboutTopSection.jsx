@@ -16,7 +16,7 @@ const AboutTopSection = () => {
   ]
 
   const achievements = [
-    { number: '30+', label: 'Years Experience', color: 'from-pink-500 to-pink-600' },
+    { number: '2+', label: 'Years Experience', color: 'from-pink-500 to-pink-600' },
     { number: '500+', label: 'Clients Served', color: 'from-purple-500 to-purple-600' },
     { number: '98%', label: 'Success Rate', color: 'from-pink-500 to-purple-500' },
     { number: '1000+', label: 'Projects Completed', color: 'from-purple-500 to-pink-500' }

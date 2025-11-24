@@ -109,7 +109,7 @@
 
 import React, { useState } from 'react'
 import { Mail, Phone, MapPin } from 'lucide-react'
-import { WEB3FORMS_CONFIG } from '../../config/web3forms'
+
 
 export default function GetinTouch() {
   const [formData, setFormData] = useState({

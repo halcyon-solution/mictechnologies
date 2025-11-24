@@ -38,38 +38,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function 
-HeroSection() {
+export default function HeroSection() {
   return (
-    <section className="w-full  flex justify-center items-start sm:items-center min-h-fit px-3 lg:px-0 py-12 md:py-0 md:h-[75vh] xl:h-[80vh]">
-      <div className="w-full  max-w-[81rem] h-full">
+    <section className="w-full flex justify-center items-center min-h-svh px-4 sm:px-6 md:px-8 lg:px-10 xl:px-16 2xl:px-0 py-6 sm:py-8 md:py-6 lg:py-8 xl:py-0">
+      <div className="w-full max-w-7xl mx-auto h-full flex flex-col justify-center gap-y-6 sm:gap-y-8 md:gap-y-6 lg:gap-y-8 xl:gap-y-16">
         
         {/* Main Content */}
-        <div className="w-full md:p-3 lg:p-0  md:w-[70%] flex gap-y-4 md:gap-y-3 flex-col xl:w-[88%] 2xl:w-[60%] justify-end md:items-start lg:items-center xl:items-end 2xl:items-start h-full md:h-[60%] pt-8 md:pt-0">
-          <div className="w-full md:w-[85%] text-white flex flex-col gap-y-4 md:gap-y-5">
-            <p className="text-base md:text-xl text-[#FF006E]">Transform Your Vision Into Reality</p>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-semibold">
-              Innovative Software Solutions That Drive Results
-            </h2>
-
-            <div className="rounded-lg w-full sm:w-72 h-14 mt-2">
-              <Link to='/contact'>
-              <button className="w-full rounded-lg border-2 border-[#FFFFFF94] text-white font-medium bg-[#FF006E] cursor-pointer hover:shadow-xl hover:border-2 hover:border-[#FF006E] hover:bg-white text-lg md:text-xl hover:text-[#FF006E] transition-all duration-300 h-full">
-            Schedule a Call
-              </button>  
-              </Link>
-                
+        <div className="w-full flex flex-col gap-y-4 sm:gap-y-6 md:gap-y-4 lg:gap-y-6">
+          <div className="w-full lg:w-[90%] xl:w-[85%] 2xl:w-[75%] text-white flex flex-col gap-y-3 sm:gap-y-4 md:gap-y-3 lg:gap-y-5 xl:gap-y-8">
+            {/* Tagline */}
+            <p className="text-sm sm:text-base md:text-base lg:text-lg xl:text-xl text-[#FF006E] font-medium">
+              Transform Your Vision Into Reality
+            </p>
             
+            {/* Main Heading */}
+            <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl leading-tight font-semibold">
+              Innovative Software Solutions That Drive Results
+            </h1>
+
+            {/* CTA Button */}
+            <div className="mt-1 sm:mt-2 md:mt-2 lg:mt-3 xl:mt-4">
+              <Link to='/contact' className="inline-block w-full sm:w-auto">
+                <button className="w-full sm:w-64 md:w-60 lg:w-72 xl:w-80 h-11 sm:h-12 md:h-12 lg:h-14 xl:h-16 rounded-lg border-2 border-[#FFFFFF94] text-white font-medium bg-[#FF006E] cursor-pointer hover:shadow-xl hover:border-[#FF006E] hover:bg-white text-sm sm:text-base md:text-base lg:text-lg xl:text-xl hover:text-[#FF006E] transition-all duration-300">
+                  Schedule a Call
+                </button>  
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Bottom Banner */}
-        <div className="w-full flex items-center justify-center md:justify-end mt-8 md:mt-0 h-auto md:h-52">
-          <div className="bg-[linear-gradient(90deg,#05010F_28%,#FF006E_100%)] p-6 md:p-10 w-full md:w-[98%] flex items-center justify-center md:justify-end rounded-lg md:rounded-none h-auto md:h-40">
-            <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium text-center md:text-right">
+        <div className="w-full flex items-center justify-center lg:justify-end">
+          <div className="bg-[linear-gradient(90deg,#05010F_28%,#FF006E_100%)] p-4 sm:p-6 md:p-5 lg:p-8 xl:p-12 w-full lg:w-[98%] flex items-center justify-center lg:justify-end rounded-lg lg:rounded-none min-h-[100px] sm:min-h-[110px] md:min-h-[100px] lg:min-h-32 xl:min-h-40">
+            <h2 className="text-white text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-5xl 2xl:text-6xl font-medium text-center lg:text-right leading-tight">
               Design. Develop. Deliver.
-            </h1>
+            </h2>
           </div>
         </div>
       </div>

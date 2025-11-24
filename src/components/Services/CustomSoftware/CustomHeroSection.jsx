@@ -5,10 +5,10 @@ export default function CustomHeroSection() {
   return (
     <section className='w-full p-2 md:p-4 text-white min-h-[60vh]'>
       
-      <div className='w-full lg:w-[90%] xl:w-[80%] 2xl:w-[70%] mx-auto h-full flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-4 py-6 md:py-8 lg:py-0'>
+      <div className='w-full lg:w-[90%]  xl:w-[80%] 2xl:w-[70%] mx-auto h-full flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-4 py-6 md:py-8 lg:py-0'>
         
         {/* Text Content */}
-        <div className='w-full lg:w-[50%] flex flex-col justify-center gap-y-3 md:gap-y-4 order-2 lg:order-1 text-center lg:text-left'>
+        <div className='w-full lg:w-[50%]  flex flex-col justify-center gap-y-3 md:gap-y-4 order-2 lg:order-1 text-center lg:text-left'>
           <h2 className='text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight'>
             Custom Software Development Services
           </h2>

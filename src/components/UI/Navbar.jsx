@@ -112,12 +112,12 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        className={`lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-60 transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
         onClick={() => setIsMobileMenuOpen(false)}
       />
 
       {/* Mobile Menu Drawer - Slide from Right */}
-      <div className={`lg:hidden fixed top-0 right-0 h-full w-[85%] sm:w-[400px] bg-gradient-to-br from-[#05010F] via-[#1a0a2e] to-[#05010F] shadow-2xl z-50 transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`lg:hidden fixed top-0 right-0 h-full w-[85%] sm:w-[400px] bg-gradient-to-br from-[#05010F] via-[#1a0a2e] to-[#05010F] shadow-2xl z-70 transition-transform duration-500 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         
         {/* Close Button */}
         <div className='flex justify-between items-center p-6 border-b border-gray-800'>
